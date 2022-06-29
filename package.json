@@ -24,6 +24,10 @@
 		"build": "npx tsc -b .",
 		"dev": "npx tsc -w & npx nodemon"
 	},
+	"dependencies": {
+		"colorette": "^2.0.19",
+		"commander": "^9.3.0"
+	},
 	"devDependencies": {
 		"@types/node": "^18.0.0",
 		"@typescript-eslint/eslint-plugin": "^5.30.0",
