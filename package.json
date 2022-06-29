@@ -30,9 +30,11 @@
 	"dependencies": {
 		"colorette": "^2.0.19",
 		"commander": "^9.3.0",
-		"execa": "^6.1.0"
+		"execa": "^6.1.0",
+		"inquirer": "^9.0.0"
 	},
 	"devDependencies": {
+		"@types/inquirer": "^8.2.1",
 		"@types/node": "^18.0.0",
 		"@typescript-eslint/eslint-plugin": "^5.30.0",
 		"@typescript-eslint/parser": "^5.30.0",
