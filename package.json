@@ -29,7 +29,8 @@
 	},
 	"dependencies": {
 		"colorette": "^2.0.19",
-		"commander": "^9.3.0"
+		"commander": "^9.3.0",
+		"execa": "^6.1.0"
 	},
 	"devDependencies": {
 		"@types/node": "^18.0.0",
