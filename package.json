@@ -4,6 +4,9 @@
 	"license": "Apache-2.0",
 	"main": "dist/index.js",
 	"version": "1.0.0",
+	"bin": {
+		"create-ned-ts": "./dist/cli.js"
+	},
 	"engines": {
 		"node": ">=16.0.0"
 	},
