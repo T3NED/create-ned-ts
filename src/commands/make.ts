@@ -1,4 +1,4 @@
-import { choice } from "./prompts";
+import { choice } from "../prompts";
 import { printError } from "../utils";
 
 const presets = ["sandbox", "api", "package"] as const;
