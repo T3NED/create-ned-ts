@@ -19,6 +19,8 @@ jobs:
                   node-version: 16
             - name: Use pnpm v6
               uses: pnpm/action-setup@v2.2.2
+              with:
+                  version: latest
             - name: Install dependencies
               run: pnpm install --frozen-lockfile
             - name: Build project
