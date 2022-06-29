@@ -1,0 +1,39 @@
+{
+	"name": "{{packageName}}",
+	"description": "{{packageDescription}}",
+	"license": "Apache-2.0",
+	"main": "{{packageMain}}",w
+    "typings": "dist/index.d.ts",
+	"version": "1.0.0",
+	"engines": {
+		"node": ">=16.0.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "{{packageRepositoryUrl}}"
+	},
+	"publishConfig": {
+		"access": "{{packagePublishConfigAccess}}"
+	},
+	"files": [
+		"dist",
+		"!dist/*.tsbuildinfo"
+	],
+	"scripts": {
+		"lint": "npx eslint src --fix",
+		"format": "npx prettier --write src",
+		"build": "npx tsc -b ."
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@types/node": "^18.0.0",
+		"@typescript-eslint/eslint-plugin": "^5.30.0",
+		"@typescript-eslint/parser": "^5.30.0",
+		"eslint": "^8.18.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-prettier": "^4.1.0",
+		"nodemon": "^2.0.18",
+		"prettier": "^2.7.1",
+		"typescript": "^4.7.4"
+	}
+}

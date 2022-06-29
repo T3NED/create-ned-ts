@@ -1,0 +1,26 @@
+# Editor
+.vscode/
+.idea/
+
+# Logs
+logs
+*.log
+.pnpm-debug.log*
+
+# Dependencies
+node_modules/
+
+# Typescript Build
+dist/
+*.tsbuildinfo
+
+# Tests
+coverage/
+
+# local env files
+.env
+.env.local
+.env.dev
+.env.development
+.env.prod
+.env.production
