@@ -1,5 +1,5 @@
 {
-	"name": "@t3ned/nedts",
+	"name": "@t3ned/create-ned-ts",
 	"description": "Boostrap a Typescript project.",
 	"license": "Apache-2.0",
 	"main": "dist/index.js",
@@ -9,7 +9,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git@github.com:t3ned/nedts.git"
+		"url": "git@github.com:t3ned/create-ned-ts.git"
 	},
 	"publishConfig": {
 		"access": "public"
