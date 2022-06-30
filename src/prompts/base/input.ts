@@ -5,7 +5,9 @@ export const input = async (message: string) => {
 		type: "input",
 		name: "input",
 		message,
-		validate: (input) => input || `enter a ${message}`,
+		validate: (input) => {
+			return input ? true : `enter ${message}`;
+		},
 	};
 
 	const result = await inquirer.prompt(question);
