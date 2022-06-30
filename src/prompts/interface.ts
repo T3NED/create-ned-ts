@@ -1,7 +1,7 @@
 export interface PresetPromptResult {
 	initGit: boolean;
 	installDependencies: boolean;
-	additionalDependencies: string[];
+	additionalDependencies: [name: string, dev: boolean][];
 	package: boolean;
 	eslint: boolean;
 	prettier: boolean;
