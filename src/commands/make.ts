@@ -11,13 +11,13 @@ export const make = async ({ preset: givenPreset }: { preset: Preset }) => {
 	switch (preset) {
 		case "sandbox":
 			const sandbox = await makeSandbox();
-			return sandbox; // TODO: parse
+			return void sandbox; // TODO: parse
 		case "api":
 			const api = await makeApi();
-			return api; // TODO: parse
+			return void api; // TODO: parse
 		case "package":
 			const pkg = await makePackage();
-			return pkg; // TODO: parse
+			return void pkg; // TODO: parse
 		default:
 			printError(`Unknown preset: ${preset} (${presets.join(", ")})`);
 			return;
