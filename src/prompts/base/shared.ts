@@ -7,7 +7,7 @@ export const makeShared = async (): Promise<SharedPresetPromptResult> => {
 	const initGit = await boolean("initialize git");
 	const eslint = await boolean("setup eslint");
 	const prettier = await boolean("setup prettier");
-	const initialCommitMessage = initGit ? await input("initial commit message") : "";
+	const initialCommitMessage = initGit ? await input("initial commit message", "initial commit") : "";
 
 	return {
 		initGit,
