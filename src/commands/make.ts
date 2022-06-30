@@ -1,4 +1,4 @@
-import { choice, makeSandbox } from "../prompts";
+import { choice, makeApi, makePackage, makeSandbox } from "../prompts";
 import { printError } from "../utils";
 
 const presets = ["sandbox", "api", "package"] as const;
@@ -13,7 +13,11 @@ export const make = async ({ preset: givenPreset }: { preset: Preset }) => {
 			const sandbox = await makeSandbox();
 			return sandbox; // TODO: parse
 		case "api":
+			const api = await makeApi();
+			return api; // TODO: parse
 		case "package":
+			const pkg = await makePackage();
+			return pkg; // TODO: parse
 		default:
 			printError(`Unknown preset: ${preset} (${presets.join(", ")})`);
 			return;
