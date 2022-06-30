@@ -3,3 +3,4 @@ export * from "./base/choice";
 export * from "./presets/sandbox";
 export * from "./presets/package";
 export * from "./presets/api";
+export * from "./makeProject";
