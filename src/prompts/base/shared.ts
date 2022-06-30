@@ -3,10 +3,10 @@ import { boolean } from "./boolean";
 import { input } from "./input";
 
 export const makeShared = async (): Promise<SharedPresetPromptResult> => {
+	const githubCI = await boolean("add github ci");
 	const initGit = await boolean("initialize git");
 	const eslint = await boolean("setup eslint");
 	const prettier = await boolean("setup prettier");
-	const githubCI = await boolean("add github ci");
 	const initialCommitMessage = initGit ? await input("initial commit message") : "";
 
 	return {
