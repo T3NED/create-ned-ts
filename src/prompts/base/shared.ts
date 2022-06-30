@@ -7,7 +7,6 @@ export const makeShared = async (): Promise<SharedPresetPromptResult> => {
 	const eslint = await boolean("setup eslint");
 	const prettier = await boolean("setup prettier");
 	const githubCI = await boolean("add github ci");
-	const githubPackageCD = await boolean("add github package cd");
 	const initialCommitMessage = initGit ? await input("initial commit message") : "";
 
 	return {
@@ -17,18 +16,11 @@ export const makeShared = async (): Promise<SharedPresetPromptResult> => {
 		eslint,
 		prettier,
 		githubCI,
-		githubPackageCD,
 		initialCommitMessage,
 	};
 };
 
 export type SharedPresetPromptResult = Pick<
 	PresetPromptResult,
-	| "initGit"
-	| "installDependencies"
-	| "eslint"
-	| "prettier"
-	| "githubCI"
-	| "githubPackageCD"
-	| "initialCommitMessage"
+	"initGit" | "installDependencies" | "eslint" | "prettier" | "githubCI" | "initialCommitMessage"
 >;

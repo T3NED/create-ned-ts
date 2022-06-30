@@ -7,6 +7,7 @@ export const makeSandbox = async (): Promise<PresetPromptResult> => {
 	return {
 		...shared,
 		additionalDependencies: [],
+		githubPackageCD: false,
 		package: false,
 	};
 };
