@@ -3,7 +3,7 @@ import { join } from "path";
 import { parseJson } from "./parseJson";
 
 export const getPackageVersion = () => {
-	const packageFilePath = join(process.cwd(), "package.json");
+	const packageFilePath = join(__dirname, "..", "..", "package.json");
 	const packageFile = readFileSync(packageFilePath, "utf-8");
 	const packageContent = parseJson(packageFile);
 
