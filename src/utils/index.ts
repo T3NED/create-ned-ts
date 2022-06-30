@@ -5,3 +5,4 @@ export * from "./copyFile";
 export * from "./initGit";
 export * from "./installDependencies";
 export * from "./partition";
+export * from "./gitCommit";
