@@ -12,7 +12,7 @@ export const makeShared = async (): Promise<SharedPresetPromptResult> => {
 	return {
 		initGit,
 		// TODO: if additional dependencies are specified for a preset, this doesn't make sense
-		installDependencies: true,
+		dependencies: [],
 		eslint,
 		prettier,
 		githubCI,
@@ -22,5 +22,5 @@ export const makeShared = async (): Promise<SharedPresetPromptResult> => {
 
 export type SharedPresetPromptResult = Pick<
 	PresetPromptResult,
-	"initGit" | "installDependencies" | "eslint" | "prettier" | "githubCI" | "initialCommitMessage"
+	"initGit" | "dependencies" | "eslint" | "prettier" | "githubCI" | "initialCommitMessage"
 >;

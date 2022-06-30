@@ -4,21 +4,21 @@ import { PresetPromptResult } from "../interface";
 
 export const makeApi = async (): Promise<PresetPromptResult> => {
 	const library = await choice("choose a library", ["express", "fastify"]);
-	const additionalDependencies: [name: string, dev: boolean][] = [["zod", false]];
+	const dependencies: [name: string, dev: boolean][] = [["zod", false]];
 
 	if (library === "express") {
-		additionalDependencies.push(["express", false], ["@types/express", true]);
+		dependencies.push(["express", false], ["@types/express", true]);
 	}
 
 	if (library === "fastify") {
-		additionalDependencies.push(["fastify", false]);
+		dependencies.push(["fastify", false]);
 	}
 
 	const shared = await makeShared();
 
 	return {
 		...shared,
-		additionalDependencies,
+		dependencies: dependencies,
 		githubPackageCD: false,
 		package: false,
 	};

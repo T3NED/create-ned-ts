@@ -8,7 +8,7 @@ export const makePackage = async (): Promise<PresetPromptResult> => {
 
 	return {
 		...shared,
-		additionalDependencies: [],
+		dependencies: [],
 		githubPackageCD,
 		package: true,
 	};
