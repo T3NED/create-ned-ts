@@ -2,7 +2,7 @@
 	"name": "{{packageName}}",
 	"description": "{{packageDescription}}",
 	"license": "Apache-2.0",
-	"main": "{{packageMain}}",w
+	"main": "{{packageMain}}",
     "typings": "dist/index.d.ts",
 	"version": "1.0.0",
 	"engines": {
